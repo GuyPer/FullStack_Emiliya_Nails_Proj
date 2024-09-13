@@ -1,0 +1,94 @@
+.UserProfile {
+  margin: 0 auto;
+  margin-top: 30vw;
+  margin-bottom: 30vw;
+  direction: rtl;
+  text-align: right;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 80vw;
+  background-color: #333;
+  color: white;
+  border-radius: 5px;
+  box-shadow:
+    rgba(0, 0, 0, 0.25) 0px 54px 55px,
+    rgba(0, 0, 0, 0.12) 0px -12px 30px,
+    rgba(0, 0, 0, 0.12) 0px 4px 6px,
+    rgba(0, 0, 0, 0.17) 0px 12px 13px,
+    rgba(0, 0, 0, 0.09) 0px -3px 5px;
+
+  .title {
+    text-align: center;
+    margin-top: 2vw;
+    text-decoration: underline;
+  }
+
+  .userDetails {
+    padding: 1vw;
+  }
+
+  .buttons {
+    width: 50vw;
+  }
+
+  .button {
+    width: 35vw;
+    margin-left: 0.5vw;
+    margin-bottom: 3vw;
+  }
+
+  .loggedOutHeader {
+    direction: rtl;
+    font-size: 1rem;
+    padding: 3vw;
+  }
+  .connctBtnAfterLogOut,
+  .SignupBtnAfterDeleteAccount {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 2vw;
+  }
+
+  .adminAcount {
+    font-weight: 700;
+    color: rgb(240, 208, 170);
+  }
+
+  @media (min-width: 768px) {
+    margin-bottom: 0vw;
+    width: 70vw;
+    .buttons {
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      justify-content: center;
+      margin-top: 1vw;
+    }
+
+    .button {
+      width: 20vw;
+    }
+
+    .loggedOutHeader {
+      font-size: 1.35rem;
+      padding: 3vw;
+    }
+  }
+  @media (min-width: 992px) {
+    margin-top: 15vw;
+    width: 50vw;
+    .button {
+      width: 13vw;
+    }
+
+    .loggedOutHeader {
+      font-size: 1.5rem;
+      padding: 3vw;
+    }
+    .adminAcount {
+      padding-right: 3vw;
+    }
+  }
+}

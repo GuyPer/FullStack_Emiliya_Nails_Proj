@@ -1,0 +1,38 @@
+.Footer {
+  width: 100vw;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding-bottom: 5vw;
+
+  @media (min-width: 768px) {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    position: absolute;
+    left: 0;
+    margin-top: 20vw;
+    border-top: 0.5px solid #746b6b;
+    padding-bottom: 0vw;
+    .footerMostElements {
+      width: 100vw;
+      display: flex;
+      flex-direction: row;
+      justify-content: space-evenly;
+      align-items: center;
+    }
+  }
+  @media (min-width: 992px) {
+  }
+}
+
+.Footer.light {
+  color: white;
+  background-color: #a6453c;
+}
+
+.Footer.dark {
+  background-color: black;
+}

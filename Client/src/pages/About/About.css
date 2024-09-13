@@ -1,0 +1,44 @@
+.About {
+  direction: rtl;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 20vw;
+  font-size: 1rem;
+  text-align: justify;
+
+  .title {
+    color: #a6453c;
+    text-decoration: underline;
+    text-align: center;
+    margin-bottom: 5vw;
+  }
+
+  .title,
+  .aboutDecription {
+    width: 80vw;
+  }
+
+  .aboutDecription {
+    margin-bottom: 10vw;
+  }
+
+  @media (min-width: 768px) {
+    font-size: 1.5rem;
+    margin-top: 15vw;
+    .title {
+      margin-bottom: 7vw;
+    }
+    .aboutDecription {
+      margin-bottom: 0vw;
+    }
+  }
+  @media (min-width: 992px) {
+    font-size: 1rem;
+    .title {
+      font-size: 2rem;
+      margin-bottom: 5vw;
+    }
+  }
+}

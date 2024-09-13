@@ -1,0 +1,99 @@
+.NavbarMenu {
+  margin-left: 0;
+  margin-right: 0;
+  padding: 0;
+  box-sizing: border-box;
+  width: 100vw;
+
+  .navbarForMobile {
+    overflow-wrap: wrap;
+    visibility: visible;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    border-bottom: 1px solid black;
+  }
+
+  .openedNavbarAfterClickOnBurger,
+  .navbarDivForSignedInForMobile {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .navbarDivForSignedInForMobile {
+    margin-top: 2vw;
+    margin-bottom: 2vw;
+    gap: 2vw;
+  }
+
+  .links {
+    width: 100vw;
+    display: block;
+    color: white;
+    font-weight: 700;
+    text-decoration: none;
+    margin-top: 2vw;
+  }
+  .clickWidthForMobile {
+    width: 100vw;
+  }
+
+  .clickWidthForMobile svg {
+    width: 100vw;
+    display: block;
+    text-align: center;
+  }
+
+  .navbarForDesktop {
+    display: none;
+  }
+
+  @media (min-width: 768px) {
+    .links {
+      display: none;
+      margin-top: 0vw;
+    }
+    .navbarForDesktop {
+      visibility: visible;
+    }
+    .navbarForMobile,
+    .openedNavbarAfterClickOnBurger {
+      display: none;
+    }
+
+    .navbarForDesktop {
+      width: 100vw;
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      justify-content: space-around;
+      border-bottom: 1px solid black;
+
+      .links {
+        display: block;
+        color: white;
+        font-weight: 700;
+        text-decoration: none;
+        width: auto;
+      }
+    }
+
+    .navbarDivForSignedIn {
+      width: 10vw;
+      display: flex;
+      justify-content: space-around;
+      align-items: center;
+    }
+
+    .signupLoginDivForDesktop {
+      display: flex;
+      justify-content: space-around;
+    }
+    .signupForDesktop,
+    .loginForDesktop {
+      padding: 0.5vw;
+    }
+  }
+}

@@ -1,0 +1,53 @@
+.Modal {
+  direction: rtl;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  .modalButtons {
+    width: 70vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 2vw;
+    padding-left: 4vw;
+  }
+
+  .modalContent {
+    background-color: white;
+    color: black;
+    padding: 2vw;
+    border-radius: 1vw;
+    width: 70vw;
+    text-align: center;
+  }
+
+  @media (min-width: 768px) {
+    .modalButtons {
+      width: 50vw;
+      gap: 2vw;
+      padding-left: 4vw;
+    }
+
+    .modalContent {
+      width: 50vw;
+    }
+  }
+  @media (min-width: 992px) {
+    .modalButtons {
+      width: 40vw;
+      gap: 2vw;
+      padding-left: 4vw;
+    }
+
+    .modalContent {
+      width: 40vw;
+    }
+  }
+}

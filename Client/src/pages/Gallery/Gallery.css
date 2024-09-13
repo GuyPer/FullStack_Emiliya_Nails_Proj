@@ -1,0 +1,118 @@
+.Gallery {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 20vw;
+
+  .titleOfGallery {
+    color: #a6453c;
+    text-decoration: underline;
+    margin-bottom: 7vw;
+  }
+  .imagesContainer {
+    width: 90vw;
+    width: 90vw;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-between;
+    padding-left: 5vw;
+    padding-right: 5vw;
+  }
+  .galleryImagesDiv {
+    width: 38vw;
+    border-radius: 10px;
+    margin-bottom: 5vw;
+    background-color: #dd15b277;
+  }
+
+  .galleryImages {
+    box-shadow:
+      rgba(0, 0, 0, 0.25) 0px 54px 55px,
+      rgba(0, 0, 0, 0.12) 0px -12px 30px,
+      rgba(0, 0, 0, 0.12) 0px 4px 6px,
+      rgba(0, 0, 0, 0.17) 0px 12px 13px,
+      rgba(0, 0, 0, 0.09) 0px -3px 5px;
+    width: 38vw;
+    height: 40vw;
+    border-radius: 10px;
+  }
+  .GalleryNotAvailable {
+    font-weight: 500;
+    margin-bottom: 40vw;
+  }
+
+  .adminBtnForNewImage {
+    margin-bottom: 5vw;
+  }
+
+  .editDeleteImageDiv {
+    width: 38vw;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 5vw;
+    margin-top: 5vw;
+    margin-bottom: 5vw;
+  }
+
+  @media (min-width: 768px) {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20vw;
+
+    .imagesContainer {
+      padding-left: 5vw;
+      padding-right: 5vw;
+    }
+
+    .galleryImagesDiv {
+      width: 25vw;
+    }
+
+    .galleryImages {
+      width: 25vw;
+      height: 25vw;
+    }
+
+    .GalleryNotAvailable {
+      font-size: 1.3rem;
+    }
+
+    .adminBtnForNewImage {
+      margin-bottom: 4vw;
+    }
+
+    .editDeleteImageDiv {
+      width: 25vw;
+      margin-top: 3vw;
+      margin-bottom: 3vw;
+    }
+  }
+
+  @media (min-width: 992px) {
+    .galleryImages {
+      width: 23vw;
+      height: 23vw;
+    }
+
+    .galleryImagesDiv {
+      width: 23vw;
+      margin: 1vw;
+    }
+
+    /* For Admin Only */
+    .adminBtnForNewImage {
+      margin-bottom: 2vw;
+    }
+    .editDeleteImageDiv {
+      width: 23vw;
+      margin-top: 3vw;
+      margin-bottom: 3vw;
+    }
+  }
+}

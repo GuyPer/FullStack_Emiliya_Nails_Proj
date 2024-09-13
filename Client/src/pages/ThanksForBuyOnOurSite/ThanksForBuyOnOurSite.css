@@ -1,0 +1,26 @@
+.ThanksForBuyOnOurSite {
+  margin-top: 30vw;
+  margin-bottom: 30vw;
+
+  .subtitle,
+  .btn {
+    margin-top: 10vw;
+  }
+
+  @media (min-width: 768px) {
+    margin-top: 40vw;
+    margin-bottom: 0vw;
+    .subtitle,
+    .btn {
+      margin-top: 5vw;
+    }
+  }
+  @media (min-width: 992px) {
+    margin-top: 20vw;
+    margin-bottom: 0vw;
+    .subtitle,
+    .btn {
+      margin-top: 5vw;
+    }
+  }
+}

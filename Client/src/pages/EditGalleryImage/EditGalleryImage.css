@@ -1,0 +1,83 @@
+.EditGalleryImage {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  direction: rtl;
+  margin-top: 15vw;
+
+  .formEditGalleryImage {
+    width: 70vw;
+    margin-top: 5vw;
+    margin-bottom: 15vw;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #333;
+    padding: 2vw;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
+  }
+
+  .form-group {
+    padding-top: 5vw;
+    padding-bottom: 3vw;
+  }
+
+  .formLabel {
+    width: 35vw;
+    text-align: right;
+    padding-right: 10px;
+    padding-bottom: 1vw;
+  }
+
+  .button {
+    margin-top: 5vw;
+    margin-bottom: 5vw;
+  }
+
+  @media (min-width: 768px) {
+    margin-top: 20vw;
+    .formEditGalleryImage {
+      width: 50vw;
+    }
+
+    label {
+      width: 40vw;
+      font-size: 1.2rem;
+      margin-top: 4vw;
+      margin-bottom: 1vw;
+    }
+    input {
+      width: 35vw;
+      font-size: 1.2rem;
+    }
+
+    .button {
+      margin-top: 5vw;
+      margin-bottom: 5vw;
+    }
+  }
+  @media (min-width: 992px) {
+    margin-top: 15vw;
+    .formEditGalleryImage {
+      width: 40vw;
+    }
+
+    .formEditGalleryImage {
+      margin-bottom: 0vw;
+    }
+
+    label {
+      width: 20vw;
+      font-size: 1.2rem;
+      margin-top: 5vw;
+    }
+    input {
+      width: 25vw;
+      font-size: 1.2rem;
+    }
+  }
+}

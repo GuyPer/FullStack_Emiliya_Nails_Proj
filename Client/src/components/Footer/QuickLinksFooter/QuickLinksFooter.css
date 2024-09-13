@@ -1,0 +1,12 @@
+.QuickLinksFooter{
+    display: flex;
+    flex-direction: column;
+
+    .linksFooter{
+        padding: 1vw;
+        color: aliceblue;
+        font-weight: 700;
+        text-decoration: none;
+    }
+
+}

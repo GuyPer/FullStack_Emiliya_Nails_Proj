@@ -1,0 +1,91 @@
+.PostNewProductByAdmin {
+  direction: rtl;
+  margin-top: 30vw;
+  margin-bottom: 20vw;
+  color: white;
+
+  .productDetails {
+    width: 70vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .container {
+    box-shadow:
+      rgba(0, 0, 0, 0.25) 0px 54px 55px,
+      rgba(0, 0, 0, 0.12) 0px -12px 30px,
+      rgba(0, 0, 0, 0.12) 0px 4px 6px,
+      rgba(0, 0, 0, 0.17) 0px 12px 13px,
+      rgba(0, 0, 0, 0.09) 0px -3px 5px;
+    border-radius: 10px;
+    width: 70vw;
+    background-color: #333;
+  }
+
+  .title {
+    padding: 3vw;
+  }
+  .productId {
+    width: 58vw;
+  }
+  label {
+    width: 48vw;
+    text-align: right;
+    margin-bottom: 0.3vw;
+  }
+  input {
+    margin-bottom: 1vw;
+  }
+  .submitBtn {
+    margin-top: 5vw;
+    margin-bottom: 5vw;
+  }
+
+  @media (min-width: 768px) {
+    margin-top: 0vw;
+    margin-bottom: 0vw;
+    .productDetails {
+      width: 70vw;
+    }
+    .container {
+      width: 70vw;
+    }
+
+    label,
+    input {
+      width: 38vw;
+    }
+
+    .productId {
+      width: 40vw;
+    }
+    .submitBtn {
+      margin-top: 2vw;
+      margin-bottom: 2vw;
+    }
+  }
+  @media (min-width: 992px) {
+    margin-top: 20vw;
+    margin-bottom: 0vw;
+    .productDetails {
+      width: 40vw;
+    }
+    .container {
+      width: 40vw;
+    }
+
+    label,
+    input {
+      width: 18vw;
+    }
+
+    .productId {
+      width: 25vw;
+    }
+    .submitBtn {
+      margin-top: 2vw;
+      margin-bottom: 2vw;
+    }
+  }
+}

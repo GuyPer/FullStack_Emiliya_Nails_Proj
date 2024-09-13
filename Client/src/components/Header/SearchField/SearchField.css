@@ -1,0 +1,26 @@
+.SearchField {
+  display: flex;
+  flex-direction: row;
+
+  .searchInput {
+    border-radius: 1vw;
+    width: 30vw;
+  }
+
+  .btnNavbar {
+    background-color: #d99789;
+    width: 15vw;
+    border-radius: 1vw;
+  }
+
+  @media (min-width: 768px) {
+    .btnNavbar {
+      width: 8vw;
+      border-radius: 0.5vw;
+    }
+    .searchInput {
+      border-radius: 1vw;
+      width: 15vw;
+    }
+  }
+}

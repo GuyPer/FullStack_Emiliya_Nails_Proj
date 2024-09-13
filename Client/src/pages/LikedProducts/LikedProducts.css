@@ -1,0 +1,123 @@
+.LikedProducts {
+  margin-top: 15vw;
+  direction: rtl;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+  .productsDiv {
+    margin-bottom: 10vw;
+    width: 70vw;
+    display: flex;
+
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 5vw;
+    border-radius: 3vw;
+    box-shadow:
+      rgba(0, 0, 0, 0.25) 0px 54px 55px,
+      rgba(0, 0, 0, 0.12) 0px -12px 30px,
+      rgba(0, 0, 0, 0.12) 0px 4px 6px,
+      rgba(0, 0, 0, 0.17) 0px 12px 13px,
+      rgba(0, 0, 0, 0.09) 0px -3px 5px;
+  }
+
+  .title {
+    color: #a6453c;
+    text-decoration: underline;
+    margin-bottom: 10vw;
+  }
+
+  .productsTitle {
+    margin-bottom: auto;
+    padding-bottom: 3vw;
+  }
+
+  .productsImages {
+    max-height: 50vw;
+    width: 70vw;
+    margin-bottom: auto;
+  }
+
+  .productsDescription {
+    padding: 2vw;
+    font-weight: normal;
+    font-size: 1rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: right;
+  }
+
+  .shoppingCartBtn {
+    margin-bottom: 5vw;
+  }
+  .pNoFavProducts {
+    color: #a6453c;
+    width: 70vw;
+    font-weight: 500;
+    margin-bottom: 40vw;
+  }
+
+  .priceOfProducts {
+    direction: rtl;
+    font-size: 1.2rem;
+    font-weight: 600;
+  }
+  @media (min-width: 768px) {
+    margin-top: 0vw;
+    .productsTitle {
+      padding: 1vw;
+      font-size: 1.2rem;
+    }
+
+    .productsContainer {
+      width: 90vw;
+      display: flex;
+      flex-wrap: wrap;
+      flex-direction: row;
+      justify-content: space-between;
+    }
+    .productsDiv,
+    .productsImages {
+      width: 28vw;
+    }
+
+    .productsDiv {
+      margin-bottom: 2vw;
+      border-radius: 1vw;
+    }
+    .productsImages {
+      height: 25vw;
+      border-radius: 1vw;
+      padding-bottom: 1vw;
+    }
+
+    .productsDescription {
+      margin-bottom: auto;
+      min-height: 20vw;
+      width: 27vw;
+    }
+
+    .removeBtn {
+      padding-bottom: 1vw;
+    }
+  }
+  @media (min-width: 992px) {
+    margin-top: 12vw;
+    .title {
+      margin-bottom: 3vw;
+    }
+    .productsDiv {
+      margin-top: 5vw;
+      margin-bottom: 0vw;
+    }
+    .productsDescription {
+      min-height: 10vw;
+      width: 25vw;
+    }
+  }
+}

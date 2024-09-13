@@ -1,0 +1,174 @@
+.Products {
+  margin-top: 15vw;
+  direction: rtl;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  .mainContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .productsContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .productsDiv {
+    margin-top: 5vw;
+    width: 70vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 5vw;
+    margin-bottom: 5vw;
+    border-radius: 3vw;
+    box-shadow:
+      rgba(0, 0, 0, 0.25) 0px 54px 55px,
+      rgba(0, 0, 0, 0.12) 0px -12px 30px,
+      rgba(0, 0, 0, 0.12) 0px 4px 6px,
+      rgba(0, 0, 0, 0.17) 0px 12px 13px,
+      rgba(0, 0, 0, 0.09) 0px -3px 5px;
+  }
+
+  .title {
+    color: #a6453c;
+    text-decoration: underline;
+    margin-bottom: 2vw;
+  }
+
+  .productsTitle {
+    margin-bottom: auto;
+    padding: 1vw;
+    font-size: 1.2rem;
+  }
+
+  .productsImages {
+    max-height: 50vw;
+    width: 70vw;
+  }
+  .messageForNotSingedIn {
+    width: 100vw;
+    text-align: center;
+  }
+
+  .productsDescription {
+    width: 67vw;
+    padding: 2vw;
+    font-weight: normal;
+    font-size: 1rem;
+    margin-bottom: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: right;
+  }
+
+  .messageForNotSingedIn {
+    font-size: 1rem;
+    font-weight: 600;
+    padding-right: 5vw;
+    padding-left: 5vw;
+  }
+
+  .priceOfProducts {
+    direction: rtl;
+    font-size: 1.2rem;
+    font-weight: 600;
+  }
+
+  .pNoProductsFounded {
+    width: 100vw;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .iconsForAdmin {
+    display: flex;
+    flex-direction: row;
+    gap: 5vw;
+    margin-top: 2vw;
+    margin-bottom: 2vw;
+    margin-top: auto;
+  }
+
+  .adminBtnForNewProduct {
+    margin-top: 5vw;
+    margin-bottom: 5vw;
+    padding: 1vw;
+    border-radius: 5px;
+  }
+
+  .liked {
+    color: red;
+  }
+
+  .loadingProducts {
+    margin-top: 15vw;
+    margin-bottom: 30vw;
+  }
+
+  @media (min-width: 768px) {
+    .productsContainer {
+      width: 90vw;
+      display: flex;
+      flex-wrap: wrap;
+      flex-direction: row;
+      justify-content: space-between;
+    }
+
+    .messageForNotSingedIn {
+      font-size: 1.3rem;
+      font-weight: 600;
+      margin-bottom: 2vw;
+    }
+
+    .productsDiv {
+      min-height: 75vw;
+      margin-bottom: 2vw;
+      border-radius: 1vw;
+      padding-bottom: 1vw;
+    }
+
+    .productsDiv,
+    .productsImages {
+      width: 28vw;
+      margin-bottom: auto;
+    }
+
+    .productsImages {
+      height: 25vw;
+      border-radius: 1vw;
+      padding-bottom: 1vw;
+      margin-bottom: auto;
+    }
+
+    .productsDescription {
+      width: 28vw;
+      min-height: 15vw;
+      padding: 1vw;
+      font-weight: normal;
+      font-size: 1rem;
+      margin-top: auto;
+    }
+    .priceOfProducts {
+      margin-top: auto;
+    }
+  }
+  @media (min-width: 992px) {
+    .productsDiv {
+      min-height: 58vw;
+    }
+    .productsDescription {
+      min-height: 10vw;
+      width: 25vw;
+    }
+  }
+}
