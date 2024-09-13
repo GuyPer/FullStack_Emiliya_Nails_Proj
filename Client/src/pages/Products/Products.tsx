@@ -137,15 +137,15 @@ export default function Products() {
                 <div
                   className="productsDiv"
                   key={product._id}
-                  onClick={() => navigate(`/product/${product._id}`)}
                 >
-                  <p className="productsTitle">{product.title}</p>
+                  <p className="productsTitle" onClick={() => navigate(`/product/${product._id}`)}>{product.title}</p>
                   <img
                     className="productsImages"
                     src={product.image.url}
                     alt={product.image.alt || "מוצר"}
+                    onClick={() => navigate(`/product/${product._id}`)}
                   />
-                  <p className="productsDescription">{product.description}</p>
+                  <p className="productsDescription" onClick={() => navigate(`/product/${product._id}`)}>{product.description}</p>
                   <p className="priceOfProducts">{product.price} ₪</p>
                   {auth?.isSignedIn && !auth.isAdmin && (
                     <div className="heartIcon">
