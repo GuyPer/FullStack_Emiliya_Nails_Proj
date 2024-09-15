@@ -81,6 +81,21 @@ VITE_EMAILJS_SERVICE_ID="service_bm3fnlr"
 VITE_EMAILJS_TEMPLATE_ID="template_zgpo668"
 VITE_EMAILJS_USER_ID="tfSO1b-QK1B1wnvF_"
 
+## Database Connection Options
+The application is designed to connect to MongoDB using either a cloud-based MongoDB Atlas connection or a locally hosted MongoDB instance.
+#### 1. Cloud-based MongoDB Atlas:
+By default, the application will attempt to connect to MongoDB Atlas using the following environment variables in the .env file:
+DB_ENV= "online"
+MONGODB_SERVER_URI_DEV= "mongodb+srv://guyperetz1990:xFCbNBvoMTz82bxm@cluster1.6lh4q.mongodb.net/?retryWrites=true&w=majority&appName=Cluster1"
+#### 2. Local MongoDB (Compass):
+In case the MongoDB Atlas connection is unavailable, the application can fall back to a local MongoDB instance (e.g., using MongoDB Compass) by setting the environment to local:
+DB_ENV= "local"
+MONGODB_LOCAL_URI_DEV = "mongodb://localhost:27017/Emiliya_nails"
+Make sure you have MongoDB installed locally, and the database is up and running on the specified port.
+-**Seeding the Local Database**: 
+If using the local MongoDB option, you must populate the database with initial data. To do this, run the provided seed file:
+node seed.js
+This will load the necessary users, products, and other initial data into the local database.
 
 ## Key Features
 
