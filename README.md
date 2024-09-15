@@ -83,10 +83,12 @@ VITE_EMAILJS_USER_ID="tfSO1b-QK1B1wnvF_"
 
 ## Database Connection Options
 The application is designed to connect to MongoDB using either a cloud-based MongoDB Atlas connection or a locally hosted MongoDB instance.
-#### 1. Cloud-based MongoDB Atlas: By default, the application will attempt to connect to MongoDB Atlas using the following environment variables in the .env file:
+#### 1. Cloud-based MongoDB Atlas:
+By default, the application will attempt to connect to MongoDB Atlas using the following environment variables in the .env file:
 DB_ENV= "online"
 MONGODB_SERVER_URI_DEV= "mongodb+srv://<username>:<password>@cluster1.mongodb.net/?retryWrites=true&w=majority&appName=Cluster1"
-#### 2. Local MongoDB (Compass): In case the MongoDB Atlas connection is unavailable, the application can fall back to a local MongoDB instance (e.g., using MongoDB Compass) by setting the environment to local:
+#### 2. Local MongoDB (Compass):
+In case the MongoDB Atlas connection is unavailable, the application can fall back to a local MongoDB instance (e.g., using MongoDB Compass) by setting the environment to local:
 DB_ENV= "local"
 MONGODB_LOCAL_URI_DEV = "mongodb://localhost:27017/Emiliya_nails"
 Make sure you have MongoDB installed locally, and the database is up and running on the specified port.
